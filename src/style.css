@@ -1,6 +1,12 @@
+:root {
+  --gradient-color: linear-gradient(
+    rgba(39, 32, 68, 0.6),
+    rgba(39, 32, 68, 0.6)
+  );
+}
+
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("../img/tokyo.jpg");
+  background-image: var(--gradient-color), url("../img/korea-shrine.jpg");
   padding: 260px 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +41,58 @@ header a {
   margin-top: 50px;
   background-color: wheat;
   text-decoration: none;
+}
+
+footer {
+  color: wheat;
+  background-image: var(--gradient-color), url("../img/korea-city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 30px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 20px;
+  opacity: 0.7;
+}
+
+footer a {
+  text-decoration: none;
+  color: wheat;
+  line-height: 24px;
+}
+
+footer li {
+  list-style: none;
+  line-height: 24px;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
