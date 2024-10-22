@@ -81,7 +81,7 @@ body {
 .btn {
   display: block;
   color: white;
-  background: #462cb2;
+  background: rgb(77, 73, 106);
   padding: 16px;
   text-align: center;
   text-decoration: none;
