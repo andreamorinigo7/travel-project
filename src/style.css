@@ -11,6 +11,11 @@ body {
   background: rgb(244, 242, 238);
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .hero {
   background-image: var(--gradient-color), url("../img/korea-shrine.jpg");
   padding: 260px 0;
@@ -20,9 +25,54 @@ body {
   text-align: center;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+
+  grid-gap: 70px;
+}
+
+.grid-2-columns {
+  grid-template-columns: auto auto;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2-columns-one-small-two-big {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background: #462cb2;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
 }
 
 header h3 {
@@ -72,6 +122,22 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #272044;
+}
+
 main p {
   color: #272044;
   opacity: 0.7;
@@ -81,8 +147,14 @@ main p {
   margin: 0;
 }
 
-.grid-2-columns {
-  grid-template-columns: auto auto;
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary {
+  background: rgb(244, 242, 238);
 }
 
 footer {
@@ -90,26 +162,6 @@ footer {
   background-image: var(--gradient-color), url("../img/korea-city.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-
-.grid {
-  display: grid;
-
-  grid-gap: 70px;
-}
-
-.img-responsive {
-  max-width: 100%;
-}
-
-.grid-2-columns-one-small-two-big {
-  grid-template-columns: 1fr 2fr 2fr;
 }
 
 footer h3 {
